@@ -25,15 +25,14 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'acstarter' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="wrapper">
-			
+		<div class="wrapper cap">
 			<?php if(is_home()) { ?>
 	            <h1 class="logo">
-	            <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+	            	<a href="<?php bloginfo('url'); ?>"><img src="<?php $logo = get_field("logo","option"); if($logo) echo $logo['sizes']['large'];?>" alt="<?php bloginfo('name');?>"></a>
 	            </h1>
 	        <?php } else { ?>
 	            <div class="logo">
-	            <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+	            	<a href="<?php bloginfo('url'); ?>"><img src="<?php $logo = get_field("logo","option"); if($logo) echo $logo['sizes']['large'];?>" alt="<?php bloginfo('name');?>"></a>
 	            </div>
 	        <?php } ?>
 
@@ -41,7 +40,7 @@
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'MENU', 'acstarter' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
-	</div><!-- wrapper -->
+		</div><!-- wrapper -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content wrapper">
