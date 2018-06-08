@@ -16,7 +16,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<?php $wp_query = new WP_Query(array('post_status'=>'private','postname'=>'home'));
+			<?php $wp_query = new WP_Query(array('post_status'=>'private','pagename'=>'home'));
 			if ( have_posts()) : the_post();
 				get_template_part( 'template-parts/content', 'index' );
 			endif; ?>

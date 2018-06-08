@@ -1,0 +1,176 @@
+.template-index {
+	>.row-1 {
+		img {
+			&.full {
+				width: 100%;
+				display: block;
+			}
+			&.overlay {
+
+			}
+		}
+	}
+	>.block {
+		padding: 20px;
+		@media screen and (min-width: $tabwidth) {
+			float: left;
+			width: 50%;
+			padding: 40px;
+			@include flexbox();
+			@include flexbox-align-content(center);
+			@include flexbox-align-items(center);
+			@include flexbox-justify(center);
+			@include flexbox-direction(column);
+		}
+		@media screen and (min-width: $midwidth) {
+			padding: 60px 50px;
+		}
+		.copy {
+			font-size: 18px;
+		}
+	}
+	>.block-1 {
+		@media screen and (min-width: $tabwidth) {
+			padding-left: 4%;
+		}
+		>.wrapper {
+			>.col-1 {
+				@media screen and (min-width: $tabwidth) {
+					float: left;
+					width: 50%;
+					padding: 0 10px 0 0 ;
+				}
+				@media screen and (min-width: $midwidth) {
+					padding: 0 30px 0 0 ;
+				}
+				img {
+					width: 100%;
+					display: block;
+				}
+			}
+			>.col-2 {
+				@media screen and (min-width: $tabwidth) {
+					float: left;
+					width: 50%;
+					padding: 0 0 0 10px;
+				}
+				@media screen and (min-width: $midwidth) {
+					padding: 0 0 0 30px ;
+				}
+				h2 {
+					font-size: 30px;
+					font-weight: 500;
+					line-height: 1.2;
+					margin: 20px 0 0 0;
+					@media screen and (min-width: $midwidth) {
+						font-size: 40px;
+						margin: 0;
+					}
+				}
+				.copy {
+					margin: 20px 0 0 0;
+				}
+				a.button {
+					margin: 20px 0 0 0;
+					background-color: $color__cs-grey;
+					@media screen and (min-width: $tabwidth) {
+						margin: 60px 0 0 0;
+					}
+				}
+			}
+		}
+	}
+	>.block-2 {
+		background-color: $color__cs-grey;
+		@media screen and (min-width: $tabwidth) {
+			padding-right: 4%;
+		}
+		>.wrapper {
+			position: relative;
+			width: 100%;
+			margin: 0 0 20px 0;
+			h2 {
+				top: 10px;
+				left: 50%;
+				width: 60%;
+				@include translatexy(-50%,0);
+				background-color: rgba(255,255,255,0.3);
+				position: absolute;
+				padding: 5px 10px;
+				text-transform: uppercase;
+				text-align: center;
+				display: none;
+				@media screen and (min-width: $midwidth) {
+					display: block;
+				}
+			}
+			img {
+				display: block;
+				width: 100%;
+			}
+			.subtitle.copy {
+				width: 90%;
+				margin: -30px auto 0 auto;
+				background-color: rgba(255,255,255,0.3);
+				padding: 10px 20px;
+				text-align: center;
+				position: relative;
+				z-index: 100;
+			}
+		}
+		a.button {
+			background-color: white;
+
+		}
+	}
+	>.block-3 {
+		background-color: $color__cs-grey;
+		@media screen and (min-width: $tabwidth) {
+			padding-left: 4%;
+		}
+		.event {
+			img {
+				width: 100%;
+				display: block;
+			}
+			h2 {
+				font-size: 30px;
+				font-weight: 500;
+				line-height: 1.2;
+				margin: 20px 0 0 0;
+				@media screen and (min-width: $midwidth) {
+					font-size: 40px;
+				}
+			}
+			.copy {
+				margin: 10px 0 0 0;
+
+			}
+			a.button {
+				margin: 20px 0 0 0;
+				background-color: white;
+
+			}
+		}
+	}
+	>.block-4 {
+		text-align: center;
+		@media screen and (min-width: $tabwidth) {
+			padding-right: 4%;
+		}
+		h2 {
+			font-size: 30px;
+			font-weight: 500;
+			line-height: 1.2;
+			margin: 20px 0 0 0;
+			@media screen and (min-width: $midwidth) {
+				font-size: 40px;
+				margin: 0;
+			}
+		}
+		.subtitle.copy {
+			margin: 10px 0 0 0;
+
+		}
+	}
+}

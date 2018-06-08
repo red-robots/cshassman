@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class("template-index"); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class("template-index clear-bottom"); ?>>
 	<?php $row_1_image = get_field("row_1_image");
 	$row_1_overlay = get_field("row_1_overlay");
 	if($row_1_image):?>
@@ -20,34 +20,36 @@
 			<?php endif;?>
 		</div><!--.row-1-->
 	<?php endif;?>
-	<section class="block-1">
+	<section class="block-1 js-blocks block">
 		<?php $image = get_field("block_1_image");
 		$title = get_field("block_1_title");
 		$subtitle = get_field("block_1_subtitle");
 		$link = get_field("block_1_link");
 		$link_text = get_field("block_1_link_text");?>
-		<div class="row-1">
-			<?php if($image):?>
-				<img src="<?php echo $image['sizes']['large'];?>" alt="<?php echo ['alt'];?>">
-			<?php endif;?>
-		</div><!--.row-1-->
-		<div class="col-2">
-			<?php if($title):?>
-				<h2><?php echo $title;?></h2>
-			<?php endif;
-			if($subtitle):?>
-				<div clas="subtitle copy">
-					<?php echo $subtitle;?>
-				</div><!--.subtitle-->
-			<?php endif;
-			if($link&&$link_text):?>
-				<a class="button" href="<?php echo $link;?>">
-					<?php echo $link_text;?>
-				</a>
-			<?php endif;?>
-		</div><!--.col-2-->
+		<div class="wrapper clear-bottom">
+			<div class="col-1">
+				<?php if($image):?>
+					<img src="<?php echo $image['sizes']['large'];?>" alt="<?php echo ['alt'];?>">
+				<?php endif;?>
+			</div><!--.col-1-->
+			<div class="col-2">
+				<?php if($title):?>
+					<h2><?php echo $title;?></h2>
+				<?php endif;
+				if($subtitle):?>
+					<div class="subtitle copy">
+						<?php echo $subtitle;?>
+					</div><!--.subtitle-->
+				<?php endif;
+				if($link&&$link_text):?>
+					<a class="button" href="<?php echo $link;?>">
+						<?php echo $link_text;?>
+					</a>
+				<?php endif;?>
+			</div><!--.col-2-->
+		</div><!--.wrapper-->
 	</section><!--.block-1-->
-	<section class="block-2">
+	<section class="block-2 js-blocks block">
 		<?php $image = get_field("block_2_image");
 		$title = get_field("block_2_title");
 		$subtitle = get_field("block_2_subtitle");
@@ -61,7 +63,7 @@
 				<img src="<?php echo $image['sizes']['large'];?>" alt="<?php echo ['alt'];?>">
 			<?php endif;?>
 			<?php if($subtitle):?>
-				<div clas="subtitle copy">
+				<div class="subtitle copy">
 					<?php echo $subtitle;?>
 				</div><!--.subtitle-->
 			<?php endif;?>
@@ -72,7 +74,7 @@
 			</a>
 		<?php endif;?>
 	</section><!--.block-2-->
-	<section class="block-3">
+	<section class="block-3 js-blocks block">
 		<?php $today = date('Ymd');
 		$args = array(
 			'post_type'=>'event',
@@ -112,14 +114,14 @@
 			<?php wp_reset_postdata();
 		endif;?>
 	</section><!--.block-3-->
-	<section class="block-4">
+	<section class="block-4 js-blocks block">
 		<?php $title = get_field("block_4_title");
 		$subtitle = get_field("block_4_subtitle");?>
 		<?php if($title):?>
 			<h2><?php echo $title;?></h2>
 		<?php endif;
 		if($subtitle):?>
-			<div clas="subtitle copy">
+			<div class="subtitle copy">
 				<?php echo $subtitle;?>
 			</div><!--.subtitle-->
 		<?php endif;?>

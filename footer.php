@@ -36,7 +36,7 @@
 			</div><!--.row-2-->
 			<?php $copyright = get_field("copyright","option");
 			if($copyright):?>
-				<div class="row-3">
+				<div class="row-3 copy">
 					<?php echo $copyright;?>
 				</div><!--.row-3-->
 			<?php endif;?>
