@@ -21,9 +21,9 @@
 			<h1><?php the_title();?></h1>
 		</header>
 		<div class="wrapper clear-bottom">
-			<div class="col-1 copy">
+			<section class="col-1 copy">
 				<?php the_content();?>
-			</div><!--.col-1-->
+			</section><!--.col-1-->
 			<div class="col-2">
 				<?php $image = get_field("image");
 				if($image):?>
