@@ -201,9 +201,6 @@
 		}
 		>.wrapper {
 			margin: 20px 0 0 0;
-			@media screen and (min-width: $midwidth) {
-				margin: 30px 0 0 0;
-			}
 			>.col-1 {
 				min-height: 1px;
 				@media screen and (min-width: $midwidth) {
@@ -223,6 +220,122 @@
 				img {
 					width: 100%;
 					display: block;
+				}
+			}
+		}
+	}
+}
+
+.template-contact {
+	>.row-1 {
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+	>.row-2.wrapper {
+		>.col-1 {
+			padding: 20px;
+			@media screen and (min-width: $midwidth) {
+				padding: 60px 4%;
+				float: left;
+				width: 50%;
+			}
+			>.row {
+				border-bottom: 1px solid $color__cs-blue;
+				padding: 20px 0;
+				@media screen and (min-width: $midwidth) {
+					padding: 40px 0;
+				}
+				&:first-child {
+					padding-top: 0;
+				}
+				&:last-child {
+					padding-bottom: 0;
+					border-bottom: none;
+				}
+				header {
+					h1, h2 {
+						font-size: 30px;
+						line-height: 1.2;
+						margin:0;
+						@media screen and (min-width: $midwidth) {
+							font-size: 40px;
+							margin: 0;
+						}
+					}
+					h1 {
+						text-transform: uppercase;
+					}
+				}
+				.copy {
+					margin: 20px 0 0 0;
+				}
+			}
+		}
+		>.col-2 {
+			background-color: $color__cs-grey;
+			padding: 20px;
+			@media screen and (min-width: $midwidth) {
+				padding: 60px 4%;
+				float: left;
+				width: 50%;
+			}
+			>.row {
+				padding: 20px 0;
+				@media screen and (min-width: $midwidth) {
+					padding: 40px 0;
+				}
+				&:first-child {
+					padding-top: 0;
+				}
+				&:last-child {
+					padding-bottom: 0;
+				}
+				header {
+					h2 {
+						font-size: 30px;
+						line-height: 1.2;
+						margin:0;
+						@media screen and (min-width: $midwidth) {
+							font-size: 40px;
+							margin: 0;
+						}
+					}
+				}
+			}
+			>.row-1 {
+				border-bottom: 1px solid $color__cs-blue;
+				.links {
+					margin: 20px 0 0 0;
+					a.blue-button {
+						width: 100%;
+						display: block;
+						text-align: left;
+						background-color: $color__cs-blue;
+						font-size: 25px;
+						color: white;
+						text-decoration: none;
+						padding: 5px 20px;
+						font-weight: 700;
+						margin: 30px 0 0 0;
+						@media screen and (min-width: $midwidth) {
+							font-size: 30px;
+						}
+						i {
+							font-size: 30px;
+							vertical-align: middle;
+							float: right;
+							@media screen and (min-width: $midwidth) {
+								font-size: 45px;
+							}
+						}
+					}
+				}
+			}
+			>.row-2 {
+				.copy {
+					margin: 10px 0 0 0;
 				}
 			}
 		}

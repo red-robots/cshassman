@@ -17,8 +17,8 @@
 		</div><!--.row-1-->
 	<?php endif;?>
 	<div class="wrapper row-2 clear-bottom">
-		<div class="col-1 copy">
-			<section class="row-1">
+		<div class="col-1 js-blocks">
+			<section class="row-1 row">
 				<header>
 					<h1><?php the_title();?></h1>
 				</header>
@@ -29,7 +29,7 @@
 					</div><!--.copy-->
 				<?php endif;?>
 			</section><!--.row-1-->
-			<section class="row-2">
+			<section class="row-2 row">
 				<?php $speechwriting_header = get_field("speechwriting_header");
 				if($speechwriting_header):?>
 					<header>
@@ -44,8 +44,8 @@
 				<?php endif;?>
 			</section><!--.row-2-->
 		</div><!--.col-1-->
-		<div class="col-2">
-			<section class="row-1">
+		<div class="col-2 js-blocks">
+			<section class="row-1 row">
 				<?php $buy_header = get_field("buy_header");
 				if($buy_header):?>
 					<header>
@@ -58,14 +58,14 @@
 					$bn_link = get_field("bn_link");
 					$bn_text = get_field("bn_text");?>
 					<?php if($amazon_link&&$amazon_text):?>
-						<a class="blue-button" href="<?php echo $amazon_link;?>"><?php echo $amazon_text;?></a>
+						<a class="blue-button clear-bottom" href="<?php echo $amazon_link;?>"><?php echo $amazon_text;?>&nbsp;<i class="fa fa-chevron-circle-right"></i></a>
 					<?php endif;
 					if($bn_link&&$bn_text):?>
-						<a class="blue-button" href="<?php echo $bn_link;?>"><?php echo $bn_text;?></a>
+						<a class="blue-button clear-bottom" href="<?php echo $bn_link;?>"><?php echo $bn_text;?>&nbsp;<i class="fa fa-chevron-circle-right"></i></a>
 					<?php endif;?>
 				</div><!--.links-->
 			</section><!--.row-1-->
-			<section class="row-2">
+			<section class="row-2 row">
 				<?php $newsletter_header = get_field("newsletter_header");
 				if($newsletter_header):?>
 					<header>

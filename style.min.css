@@ -588,7 +588,7 @@ table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 button:focus{outline:0}
 body,button,input,select,textarea{color:#404040;font-family:sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
-h1,h2,h3,h4,h5,h6{clear:both}
+h1,h2,h3,h4,h5,h6{color:#1d354d}
 .entry-content h1{font-size:30px}
 p{margin-bottom:1.5em}
 dfn,cite,em,i{font-style:italic}
@@ -814,12 +814,37 @@ body{border-top:5px solid #1d354d}
 }.template-two-col>.row-2.wrapper.cap>header h1{font-size:30px;line-height:1.2;margin:0;text-transform:uppercase}
 @media screen and (min-width:900px){.template-two-col>.row-2.wrapper.cap>header h1{font-size:40px;margin:0}
 }.template-two-col>.row-2.wrapper.cap>.wrapper{margin:20px 0 0 0}
-@media screen and (min-width:900px){.template-two-col>.row-2.wrapper.cap>.wrapper{margin:30px 0 0 0}
-}.template-two-col>.row-2.wrapper.cap>.wrapper>.col-1{min-height:1px}
+.template-two-col>.row-2.wrapper.cap>.wrapper>.col-1{min-height:1px}
 @media screen and (min-width:900px){.template-two-col>.row-2.wrapper.cap>.wrapper>.col-1{float:left;width:70%;padding:0 80px 0 0}
 }.template-two-col>.row-2.wrapper.cap>.wrapper>.col-2{min-height:1px;margin:20px 0 0 0}
 @media screen and (min-width:900px){.template-two-col>.row-2.wrapper.cap>.wrapper>.col-2{float:left;margin:0;width:30%}
 }.template-two-col>.row-2.wrapper.cap>.wrapper>.col-2 img{width:100%;display:block}
+.template-contact>.row-1 img{width:100%;display:block}
+.template-contact>.row-2.wrapper>.col-1{padding:20px}
+@media screen and (min-width:900px){.template-contact>.row-2.wrapper>.col-1{padding:60px 4%;float:left;width:50%}
+}.template-contact>.row-2.wrapper>.col-1>.row{border-bottom:1px solid #1d354d;padding:20px 0}
+@media screen and (min-width:900px){.template-contact>.row-2.wrapper>.col-1>.row{padding:40px 0}
+}.template-contact>.row-2.wrapper>.col-1>.row:first-child{padding-top:0}
+.template-contact>.row-2.wrapper>.col-1>.row:last-child{padding-bottom:0;border-bottom:0}
+.template-contact>.row-2.wrapper>.col-1>.row header h1,.template-contact>.row-2.wrapper>.col-1>.row header h2{font-size:30px;line-height:1.2;margin:0}
+@media screen and (min-width:900px){.template-contact>.row-2.wrapper>.col-1>.row header h1,.template-contact>.row-2.wrapper>.col-1>.row header h2{font-size:40px;margin:0}
+}.template-contact>.row-2.wrapper>.col-1>.row header h1{text-transform:uppercase}
+.template-contact>.row-2.wrapper>.col-1>.row .copy{margin:20px 0 0 0}
+.template-contact>.row-2.wrapper>.col-2{background-color:#efefef;padding:20px}
+@media screen and (min-width:900px){.template-contact>.row-2.wrapper>.col-2{padding:60px 4%;float:left;width:50%}
+}.template-contact>.row-2.wrapper>.col-2>.row{padding:20px 0}
+@media screen and (min-width:900px){.template-contact>.row-2.wrapper>.col-2>.row{padding:40px 0}
+}.template-contact>.row-2.wrapper>.col-2>.row:first-child{padding-top:0}
+.template-contact>.row-2.wrapper>.col-2>.row:last-child{padding-bottom:0}
+.template-contact>.row-2.wrapper>.col-2>.row header h2{font-size:30px;line-height:1.2;margin:0}
+@media screen and (min-width:900px){.template-contact>.row-2.wrapper>.col-2>.row header h2{font-size:40px;margin:0}
+}.template-contact>.row-2.wrapper>.col-2>.row-1{border-bottom:1px solid #1d354d}
+.template-contact>.row-2.wrapper>.col-2>.row-1 .links{margin:20px 0 0 0}
+.template-contact>.row-2.wrapper>.col-2>.row-1 .links a.blue-button{width:100%;display:block;text-align:left;background-color:#1d354d;font-size:25px;color:white;text-decoration:none;padding:5px 20px;font-weight:700;margin:30px 0 0 0}
+@media screen and (min-width:900px){.template-contact>.row-2.wrapper>.col-2>.row-1 .links a.blue-button{font-size:30px}
+}.template-contact>.row-2.wrapper>.col-2>.row-1 .links a.blue-button i{font-size:30px;vertical-align:middle;float:right}
+@media screen and (min-width:900px){.template-contact>.row-2.wrapper>.col-2>.row-1 .links a.blue-button i{font-size:45px}
+}.template-contact>.row-2.wrapper>.col-2>.row-2 .copy{margin:10px 0 0 0}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
