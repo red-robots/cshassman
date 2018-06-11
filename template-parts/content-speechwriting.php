@@ -56,7 +56,7 @@
 			$contact_header = get_field("contact_header");
 			$contact_form = get_field("contact_form");
 			if($logo):?>
-				<img src="<?php echo $image['sizes']['large'];?>" alt="<?php echo $image['alt'];?>">
+				<img src="<?php echo $logo['sizes']['large'];?>" alt="<?php echo $logo['alt'];?>">
 			<?php endif;
 			if($contact_header):?>
 				<header>

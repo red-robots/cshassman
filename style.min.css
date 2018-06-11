@@ -840,12 +840,40 @@ body{border-top:5px solid #1d354d}
 @media screen and (min-width:900px){.template-contact>.row-2.wrapper>.col-2>.row header h2{font-size:40px;margin:0}
 }.template-contact>.row-2.wrapper>.col-2>.row-1{border-bottom:1px solid #1d354d}
 .template-contact>.row-2.wrapper>.col-2>.row-1 .links{margin:20px 0 0 0}
-.template-contact>.row-2.wrapper>.col-2>.row-1 .links a.blue-button{width:100%;display:block;text-align:left;background-color:#1d354d;font-size:25px;color:white;text-decoration:none;padding:5px 20px;font-weight:700;margin:30px 0 0 0}
+.template-contact>.row-2.wrapper>.col-2>.row-1 .links a.blue-button{width:100%;display:block;text-align:left;background-color:#1d354d;font-size:25px;color:white;text-decoration:none;padding:5px 30px;font-weight:700;margin:30px 0 0 0}
 @media screen and (min-width:900px){.template-contact>.row-2.wrapper>.col-2>.row-1 .links a.blue-button{font-size:30px}
 }.template-contact>.row-2.wrapper>.col-2>.row-1 .links a.blue-button i{font-size:30px;vertical-align:middle;float:right}
 @media screen and (min-width:900px){.template-contact>.row-2.wrapper>.col-2>.row-1 .links a.blue-button i{font-size:45px}
 }.template-contact>.row-2.wrapper>.col-2>.row-2 .copy{margin:10px 0 0 0}
-.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
+.template-speechwriting>.row-1 img{width:100%;display:block}
+.template-speechwriting>.row-2.wrapper>.col-1{padding:20px}
+@media screen and (min-width:900px){.template-speechwriting>.row-2.wrapper>.col-1{padding:60px 4%;float:left;width:50%}
+}.template-speechwriting>.row-2.wrapper>.col-1>.row-1>header h1{font-size:30px;line-height:1.2;margin:0;text-transform:uppercase}
+@media screen and (min-width:900px){.template-speechwriting>.row-2.wrapper>.col-1>.row-1>header h1{font-size:40px;margin:0}
+}.template-speechwriting>.row-2.wrapper>.col-1>.row-1 .copy{margin:20px 0 0 0}
+.template-speechwriting>.row-2.wrapper>.col-1>.row-1 a.blue-button{width:100%;display:block;text-align:left;background-color:#1d354d;font-size:25px;color:white;text-decoration:none;padding:5px 30px;font-weight:700;margin:30px 0 0 0}
+@media screen and (min-width:900px){.template-speechwriting>.row-2.wrapper>.col-1>.row-1 a.blue-button{font-size:30px;margin:80px 0 0 0}
+}.template-speechwriting>.row-2.wrapper>.col-1>.row-1 a.blue-button i{font-size:30px;vertical-align:middle;float:right}
+@media screen and (min-width:900px){.template-speechwriting>.row-2.wrapper>.col-1>.row-1 a.blue-button i{font-size:45px}
+}.template-speechwriting>.row-2.wrapper>.col-1 .testimonials{margin:40px 0 0 0}
+@media screen and (min-width:900px){.template-speechwriting>.row-2.wrapper>.col-1 .testimonials{margin:120px 0 0 0}
+}.template-speechwriting>.row-2.wrapper>.col-1 .testimonials>header{margin:0 0 20px 0}
+.template-speechwriting>.row-2.wrapper>.col-1 .testimonials>header h2{font-size:30px;line-height:1.2;margin:0;text-transform:uppercase}
+@media screen and (min-width:900px){.template-speechwriting>.row-2.wrapper>.col-1 .testimonials>header h2{font-size:35px;margin:0}
+}.template-speechwriting>.row-2.wrapper>.col-1 .testimonials .testimonial{padding:20px 0;border-bottom:5px solid #1d354d}
+@media screen and (min-width:900px){.template-speechwriting>.row-2.wrapper>.col-1 .testimonials .testimonial{padding:50px 0}
+}.template-speechwriting>.row-2.wrapper>.col-1 .testimonials .testimonial em{font-weight:300}
+.template-speechwriting>.row-2.wrapper>.col-2{background-color:#efefef;padding:20px}
+@media screen and (min-width:900px){.template-speechwriting>.row-2.wrapper>.col-2{padding:60px 4%;float:left;width:50%}
+}.template-speechwriting>.row-2.wrapper>.col-2 img{margin:0 auto;width:80%;display:block}
+.template-speechwriting>.row-2.wrapper>.col-2 header{margin:20px 0 0 0}
+@media screen and (min-width:900px){.template-speechwriting>.row-2.wrapper>.col-2 header{margin:80px 0 0 0}
+}.template-speechwriting>.row-2.wrapper>.col-2 header h2{font-size:30px;line-height:1.2;margin:0;text-transform:uppercase}
+@media screen and (min-width:900px){.template-speechwriting>.row-2.wrapper>.col-2 header h2{font-size:35px;margin:0}
+}.template-speechwriting>.row-2.wrapper>.col-2 form input,.template-speechwriting>.row-2.wrapper>.col-2 form textarea{border:1px solid #1d354d;border-radius:0}
+.template-speechwriting>.row-2.wrapper>.col-2 form input[type=submit]{background-color:#1d354d;color:white;font-size:30px;font-weight:700;box-shadow:none;text-shadow:none;padding:10px 30px}
+@media screen and (min-width:900px){.template-speechwriting>.row-2.wrapper>.col-2 form input[type=submit]{font-size:35px}
+}.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
 .infinite-scroll .posts-navigation,.infinite-scroll.neverending .site-footer{display:none}
