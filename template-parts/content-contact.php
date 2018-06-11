@@ -80,6 +80,5 @@
 				<?php endif;?>
 			</section><!--.row-2-->
 		</div><!--.col-2-->
-		</div><!--.wrapper-->
 	</div><!--.wrapper-->
 </article><!-- #post-## -->
