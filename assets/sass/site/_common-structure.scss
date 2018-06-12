@@ -136,6 +136,8 @@ body {
 			>button {
 				display: inline-block;
 				font-size: 18px;
+				box-shadow: none;
+				border: none;
 				background-color: $color__cs-blue;
 				color: white;
 				@media screen and (min-width: $tabwidth){

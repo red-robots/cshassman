@@ -211,7 +211,7 @@
 			}
 			>.col-2 {
 				min-height: 1px;
-				margin: 20px 0 0 0;
+				margin: 40px 0 0 0;
 				@media screen and (min-width: $midwidth) {
 					float: left;
 					margin: 0;
@@ -325,9 +325,9 @@
 						i {
 							font-size: 30px;
 							vertical-align: middle;
-							float: right;
 							@media screen and (min-width: $midwidth) {
 								font-size: 45px;
+								float: right;
 							}
 						}
 					}
@@ -391,9 +391,9 @@
 					i {
 						font-size: 30px;
 						vertical-align: middle;
-						float: right;
 						@media screen and (min-width: $midwidth) {
 							font-size: 45px;
+							float: right;
 						}
 					}
 				}
@@ -505,6 +505,148 @@
 		}
 		.copy {
 			margin: 20px 0 0 0;
+		}
+	}
+}
+
+.template-blog {
+	background-color: $color__cs-grey;
+	>.row-1 {
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+	>.row-2.wrapper.cap {
+		padding: 20px 0;
+		@media screen and (min-width: $midwidth) {
+			padding: 60px 0;
+		}
+		>header {
+			h1, .blog-title {
+				font-size: 30px;
+				line-height: 1.2;
+				margin:0;
+				font-weight: 700;
+				color: $color__cs-blue;
+				text-transform: uppercase;
+				@media screen and (min-width: $midwidth) {
+					font-size: 40px;
+					margin: 0;
+				}
+			}
+		}
+		>.wrapper {
+			margin: 20px 0 0 0;
+			>.col-1 {
+				min-height: 1px;
+				@media screen and (min-width: $midwidth) {
+					float: left;
+					width: 70%;
+					padding: 0 80px 0 0;
+				}
+				.posts {
+					.post {
+						background-color: white;
+						padding: 20px;
+						box-shadow: 0 0 5px black;
+						text-align: center;
+						margin: 20px 0 0 0;
+						@media screen and (min-width: $midwidth) {
+							padding: 20px 30px 100px 30px;
+							margin: 50px 0 0 0;
+						}
+						&:first-child {
+							margin-top: 0;
+						}
+						>header {
+							h2, h1 {
+								font-size: 30px;
+								line-height: 1.2;
+								margin:0;
+								text-align: left;
+								@media screen and (min-width: $midwidth) {
+									font-size: 40px;
+									margin: 0;
+								}
+							}
+						}
+						>img {
+							width: 100%;
+							display: block;
+							margin: 15px 0 0 0;
+						}
+						.copy {
+							margin: 25px 0 0 0;
+							text-align: left;
+						}
+						a.blue-button {
+							display: inline-block;
+							background-color: $color__cs-blue;
+							font-size: 25px;
+							color: white;
+							text-decoration: none;
+							padding: 5px 30px;
+							font-weight: 700;
+							margin: 30px 0 0 0;
+							@media screen and (min-width: $midwidth) {
+								font-size: 30px;
+								margin: 70px 0 0 0;
+								text-align: left;
+							}
+							i {
+								font-size: 30px;
+								vertical-align: middle;
+								@media screen and (min-width: $midwidth) {
+									font-size: 45px;
+									float: right;
+								}
+							}
+						}
+					}
+				}
+			}
+			>.col-2 {
+				min-height: 1px;
+				margin: 40px 0 0 0;
+				@media screen and (min-width: $midwidth) {
+					float: left;
+					margin: 0;
+					width: 30%;
+				}
+				img {
+					width: 100%;
+					display: block;
+				}
+				.copy {
+					margin: 15px 0 0 0;
+				}
+				>h2 {
+					text-align: left;
+					font-size: 20px;
+					line-height: 1.2;
+					margin: 20px 0 0 0;
+					text-transform: uppercase;
+					@media screen and (min-width: $midwidth) {
+						margin: 40px 0 0 0;
+						font-size: 25px;
+					}
+					&:first-child {
+						margin-top: 0;
+					}
+				}
+				ul {
+					margin: 20px 0 0 0;
+					padding: 0;
+					li {
+						list-style-type: none;
+						a {
+							color: inherit;
+							text-decoration: none;
+						}
+					}
+				}
+			}
 		}
 	}
 }

@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * Template Name: Blog
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package ACStarter
  */
@@ -12,9 +12,13 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php
-			get_template_part( 'template-parts/content', 'single' );
-		?>
+			<?php
+			if ( have_posts() ) : the_post();
+
+				get_template_part( 'template-parts/content', 'blog' );
+
+			endif; // End of the loop.
+			?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
