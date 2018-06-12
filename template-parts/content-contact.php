@@ -77,6 +77,10 @@
 					<div class="copy">
 						<?php echo $newsletter_text;?>
 					</div><!--.copy-->
+				<?php endif;
+				$mailchimp_code = get_field("mailchimp_code","option");
+				if($mailchimp_code):?>
+					<?php echo $mailchimp_code;?>
 				<?php endif;?>
 			</section><!--.row-2-->
 		</div><!--.col-2-->

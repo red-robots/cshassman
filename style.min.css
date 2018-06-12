@@ -587,7 +587,7 @@ optgroup{font-weight:bold}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 button:focus{outline:0}
-body,button,input,select,textarea{color:#404040;font-family:sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
+body,button,input,select,textarea{color:black;font-family:sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
 h1,h2,h3,h4,h5,h6{color:#1d354d}
 .entry-content h1{font-size:30px}
 p{margin-bottom:1.5em}
@@ -725,22 +725,22 @@ html[xmlns] .flexslider .slides{display:block}
 .cap{max-width:1500px;padding-right:20px !important;padding-left:20px !important;margin:0 auto}
 @media screen and (min-width:900px){.cap{padding-right:4% !important;padding-left:4% !important}
 }.clear-bottom:after{clear:both;content:"";display:block}
-.copy{font-size:14px;color:#404040}
+.copy{font-size:14px;color:black}
 @media screen and (min-width:600px){.copy{font-size:16px}
 }.copy>*:first-child{margin-top:0;padding-top:0}
 .copy>*:last-child{margin-bottom:0;padding-bottom:0}
 .copy p{margin:20px 0}
 .copy strong,.copy b,.copy em{font-weight:800}
-.copy a{text-decoration:none;color:#404040;position:relative}
-.copy a:hover{color:#404040;text-decoration:underline}
-.copy h1,.copy h2,.copy h3{margin:0 0 10px 0;text-transform:uppercase;color:#404040}
+.copy a{text-decoration:none;color:black;position:relative}
+.copy a:hover{color:black;text-decoration:underline}
+.copy h1,.copy h2,.copy h3{margin:0 0 10px 0;text-transform:uppercase;color:black}
 .copy h1{font-size:30px}
 .copy h2{font-size:25px}
 .copy h3{font-size:20px}
 .copy ul,.copy ol{padding:0;margin:0 0 20px 40px;font-size:inherit}
 .copy ul li,.copy ol li{margin:0;font-size:inherit;padding:0;list-style-type:disc}
 .copy ul li a,.copy ol li a{cursor:pointer}
-.copy ul li a:hover,.copy ol li a:hover{color:#404040}
+.copy ul li a:hover,.copy ol li a:hover{color:black}
 .copy ol li{list-style-type:decimal}
 a.button{text-transform:uppercase;font-size:20px;padding:10px 30px;text-align:center;border:1px solid #457a70;color:inherit;text-decoration:none;display:inline-block}
 body{border-top:10px solid #1d354d}
@@ -807,8 +807,18 @@ body{border-top:10px solid #1d354d}
 .template-index>.block-4{text-align:center}
 @media screen and (min-width:600px){.template-index>.block-4{padding-right:4%}
 }.template-index>.block-4 h2{font-size:30px;font-weight:500;line-height:1.2;margin:20px 0 0 0}
-@media screen and (min-width:900px){.template-index>.block-4 h2{font-size:40px;margin:0}
+@media screen and (min-width:900px){.template-index>.block-4 h2{font-size:40px}
 }.template-index>.block-4 .subtitle.copy{margin:10px 0 0 0}
+@media screen and (min-width:900px){.template-index>.block-4 .subtitle.copy{margin:10px auto 0 auto;width:60%}
+}.template-index>.block-4 #mc_embed_signup{width:100%}
+.template-index>.block-4 #mc_embed_signup form{margin:20px 0 0 0;width:100%}
+@media screen and (min-width:900px){.template-index>.block-4 #mc_embed_signup form{margin:50px 0 0 0}
+}.template-index>.block-4 #mc_embed_signup form input,.template-index>.block-4 #mc_embed_signup form textarea{border:1px solid #457a70;border-radius:0;background-color:#efefef;color:black;padding:10px 20px;width:80%}
+.template-index>.block-4 #mc_embed_signup form::-webkit-input-placeholder{color:black !important}
+.template-index>.block-4 #mc_embed_signup form:-ms-input-placeholder{color:black !important}
+.template-index>.block-4 #mc_embed_signup form::-moz-placeholder{color:black !important}
+.template-index>.block-4 #mc_embed_signup form:-moz-placeholder{color:black !important}
+.template-index>.block-4 #mc_embed_signup form input[type=submit]{text-transform:uppercase;font-size:20px;padding:10px 30px;margin:10px 0 0 0;text-align:center;border:1px solid #457a70;color:inherit;text-decoration:none;display:inline-block;box-shadow:none;width:auto}
 .template-two-col>.row-1 img{width:100%;display:block}
 .template-two-col>.row-2.wrapper.cap{padding:20px 0}
 @media screen and (min-width:900px){.template-two-col>.row-2.wrapper.cap{padding:60px 0}
@@ -846,7 +856,15 @@ body{border-top:10px solid #1d354d}
 }.template-contact>.row-2.wrapper>.col-2>.row-1 .links a.blue-button i{font-size:30px;vertical-align:middle}
 @media screen and (min-width:900px){.template-contact>.row-2.wrapper>.col-2>.row-1 .links a.blue-button i{font-size:45px;float:right}
 }.template-contact>.row-2.wrapper>.col-2>.row-2 .copy{margin:10px 0 0 0}
-.template-speechwriting>.row-1 img{width:100%;display:block}
+.template-contact>.row-2.wrapper>.col-2>.row-2 #mc_embed_signup{margin:20px 0 0 0}
+.template-contact>.row-2.wrapper>.col-2>.row-2 #mc_embed_signup form input,.template-contact>.row-2.wrapper>.col-2>.row-2 #mc_embed_signup form textarea{border:1px solid #1d354d;border-radius:0;background-color:white;color:black;padding:10px 20px;width:100%}
+.template-contact>.row-2.wrapper>.col-2>.row-2 #mc_embed_signup form::-webkit-input-placeholder{color:black !important}
+.template-contact>.row-2.wrapper>.col-2>.row-2 #mc_embed_signup form:-ms-input-placeholder{color:black !important}
+.template-contact>.row-2.wrapper>.col-2>.row-2 #mc_embed_signup form::-moz-placeholder{color:black !important}
+.template-contact>.row-2.wrapper>.col-2>.row-2 #mc_embed_signup form:-moz-placeholder{color:black !important}
+.template-contact>.row-2.wrapper>.col-2>.row-2 #mc_embed_signup form input[type=submit]{background-color:#1d354d;color:white;font-size:30px;font-weight:700;box-shadow:none;text-shadow:none;padding:10px 30px;margin:15px 0 0 0}
+@media screen and (min-width:900px){.template-contact>.row-2.wrapper>.col-2>.row-2 #mc_embed_signup form input[type=submit]{font-size:35px}
+}.template-speechwriting>.row-1 img{width:100%;display:block}
 .template-speechwriting>.row-2.wrapper>.col-1{padding:20px}
 @media screen and (min-width:900px){.template-speechwriting>.row-2.wrapper>.col-1{padding:60px 4%;float:left;width:50%}
 }.template-speechwriting>.row-2.wrapper>.col-1>.row-1>header h1{font-size:30px;line-height:1.2;margin:0;text-transform:uppercase}

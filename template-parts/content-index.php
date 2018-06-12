@@ -124,6 +124,10 @@
 			<div class="subtitle copy">
 				<?php echo $subtitle;?>
 			</div><!--.subtitle-->
+		<?php endif;
+		$mailchimp_code = get_field("mailchimp_code","option");
+		if($mailchimp_code):?>
+			<?php echo $mailchimp_code;?>
 		<?php endif;?>
 	</section><!--.block-4-->
 </article><!-- #post-## -->
