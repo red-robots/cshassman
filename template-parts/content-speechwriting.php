@@ -64,6 +64,7 @@
 				</header>
 			<?php endif;
 			if($contact_form):?>
+			<div id="form"></div>
 				<?php echo $contact_form;?>
 			<?php endif;?>
 		</section><!--.col-2-->
