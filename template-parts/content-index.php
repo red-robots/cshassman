@@ -16,7 +16,9 @@
 		<div class="row-1">
 			<img class="full" src="<?php echo $row_1_image['url'];?>" alt="<?php echo $row_1_image['alt'];?>">		
 			<?php if($row_1_overlay):?>
-				<img class="overlay" src="<?php echo $row_1_overlay['sizes']['large'];?>" alt="<?php echo $row_1_overlay['alt'];?>">
+				<div class="overlay">
+					<img class="overlaypic" src="<?php echo $row_1_overlay['sizes']['large'];?>" alt="<?php echo $row_1_overlay['alt'];?>">
+				</div>
 			<?php endif;?>
 		</div><!--.row-1-->
 	<?php endif;?>
