@@ -775,7 +775,7 @@ body{border-top:10px solid #1d354d}
 #colophon>.wrapper>.row-3{margin:20px 0 0 0;color:inherit;font-size:18px}
 .template-index>.row-1{width:100%;position:relative}
 .template-index>.row-1 img.full{width:100%;display:block}
-.template-index>.row-1 .overlay{width:60%;margin:0 auto}
+.template-index>.row-1 .overlay{width:60%;margin:0 auto;line-height:0}
 @media screen and (min-width:600px){.template-index>.row-1 .overlay{width:30%;position:absolute;bottom:0;left:35%}
 }.template-index>.block{padding:20px}
 @media screen and (min-width:600px){.template-index>.block{float:left;width:50%;padding:40px;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-justify-content:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
