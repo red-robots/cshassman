@@ -40,8 +40,7 @@
 				<?php $archives_title = get_field("archives_title","option");
 				if($archives_title):?>
 					<h2><?php echo $archives_title;?></h2>
-				<?php endif;?>
-				<ul>
+								<ul>
 					<?php wp_get_archives(array('limit'=>12));?>
 				</ul>
 				<?php $limit = 0;
@@ -55,6 +54,8 @@
 						<?php endforeach;?>
 					</ul> 
 				<?php endif;?>
+				<?php endif;?>
+
 				<?php $categories_title = get_field("categories_title","option");
 				if($categories_title):?>
 					<h2><?php echo $categories_title;?></h2>
