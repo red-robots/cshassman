@@ -20,17 +20,20 @@ get_header(); ?>
 							if(have_posts()):?>
 								<div class="posts">
 									<?php while(have_posts()):the_post();
+									$image = get_field("image");
 										$post__not_in[] = get_the_ID();?>
-										<section class="post">
+										<section class="post eevent">
 											<header>
-												<h1><?php the_title();?></h1>
+												<h1 class="eevent"><?php the_title();?></h1>
 											</header>
-											<?php if(has_post_thumbnail()):?>
-												<?php the_post_thumbnail('large');?>
+											<?php if($image):?>
+												<div class="left"><img src="<?php echo $image['sizes']['large'];?>" alt="<?php echo $image['alt'];?>"></div>
 											<?php endif;?>
+											<?php if($image){?><div class="right"><?php } ?>
 											<div class="copy">
 												<?php the_content();?>
 											</div><!--.copy-->
+											<?php if($image){?></div><?php } ?>
 										</section><!--.post-->
 									<?php endwhile;?>
 								</div><!--.posts-->

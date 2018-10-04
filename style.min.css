@@ -946,6 +946,11 @@ body{border-top:10px solid #1d354d}
 .plus-minus-toggle:after{-webkit-transform-origin:center;-ms-transform-origin:center;transform-origin:center}
 .plus-minus-toggle.collapsed:after{-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}
 .plus-minus-toggle.collapsed:before{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.eevent{width:100%;overflow:hidden}
+.eevent .left{width:25%;float:left}
+.eevent .left img{width:100%}
+.eevent .right{width:65%;float:right}
+.eevent h1.eevent{margin:0 0 20px 0 !important}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
