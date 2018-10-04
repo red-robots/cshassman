@@ -56,19 +56,14 @@ get_header(); ?>
 							<?php } ?>
 							<?php endif;?>
 
-							<?php $categories_title = get_field("categories_title","option");
-							if($categories_title):?>
-								<h2><?php echo $categories_title;?></h2>
-							<?php endif;?>
-							<ul>
-								<?php wp_list_categories(array('title_li'=>''));?>
-							</ul>
+							
+							
 							<?php $latest_posts_title = get_field("latest_posts_title","option");
 							if($latest_posts_title):?>
-								<h2><?php echo $latest_posts_title;?></h2>
+								<h2>Other Events</h2>
 							<?php endif;?>
 							<?php $args = array(
-								'post_type'=>'post',
+								'post_type'=>'event',
 								'posts_per_page'=>5,
 								'orderby'=>'date',
 								'order'=>'ASC',
