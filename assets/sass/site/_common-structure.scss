@@ -95,7 +95,8 @@ body {
 	border-top: 10px solid $color__cs-blue;
 }
 #masthead {
-	box-shadow: 2px 0 10px black;
+	// box-shadow: 2px 0 10px black;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.07);
 	z-index: 100;
 	position: relative;
 	>.wrapper {

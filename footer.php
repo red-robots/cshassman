@@ -24,13 +24,13 @@
 					$twitter = get_field("twitter_link","option");
 					$instagram = get_field("instagram_link","option");
 					if($facebook):?>
-						<a href="<?php echo $facebook;?>"><i class="fa fa-facebook"></i></a>
+						<a href="<?php echo $facebook;?>"><i class="fab fa-facebook"></i></a>
 					<?php endif;
 					if($twitter):?>
-						<a href="<?php echo $twitter;?>"><i class="fa fa-twitter"></i></a>
+						<a href="<?php echo $twitter;?>"><i class="fab fa-twitter"></i></a>
 					<?php endif;
 					if($instagram):?>
-						<a href="<?php echo $instagram;?>"><i class="fa fa-instagram"></i></a>
+						<a href="<?php echo $instagram;?>"><i class="fab fa-instagram"></i></a>
 					<?php endif;?>
 				</div><!--.social-->
 			</div><!--.row-2-->

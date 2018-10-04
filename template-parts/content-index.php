@@ -77,10 +77,12 @@
 		<?php endif;?>
 	</section><!--.block-2-->
 	<section class="block-3 js-blocks block">
+	<div class="frontevent">
+		<h2>UPCOMING EVENTS</h2>
 		<?php $today = date('Ymd');
 		$args = array(
 			'post_type'=>'event',
-			'posts_per_page'=>1,
+			'posts_per_page'=> 3,
 			'orderby'=>'meta_value_num',
 			'order'=>'ASC',
 			'meta_key'=>'date',
@@ -91,30 +93,30 @@
 			))
 		);
 		$query = new WP_Query($args);
-		if($query->have_posts()):$query->the_post();
+		if($query->have_posts()):while($query->have_posts()):$query->the_post();
 			$image = get_field("image");
-			$date = get_field("date");
+			$date = get_field("date", false, false);
+			$enddate = get_field("end_date", false, false);
+			// make date object
+			$date = new DateTime($date);
+			$enddate = new DateTime($enddate);
 			$read_more_text = get_field("read_more_text","option");
 			$speaking_text = get_field("speaking_text","option");?>
-			<div class="event">
-				<?php if($image):?>
-					<img src="<?php echo $image['sizes']['large'];?>" alt="<?php echo $image['alt'];?>">
-				<?php endif;?>
-				<?php if($speaking_text&&$date):?>
-					<h2><?php echo $speaking_text.'&nbsp'.(new DateTime($date))->format('n/j');?></h2>
-				<?php endif;?>
-				<div class="copy">
-					<?php the_excerpt();?>
-				</div><!--.copy-->
-				<a class="button" href="<?php the_permalink();?>">
-					<?php if($read_more_text): 
-						echo $read_more_text;
-					else:
-						echo "Read More";
-					endif;?>
-				</a>
-			<?php wp_reset_postdata();
-		endif;?>
+				
+					
+
+					<div class="faqrows">
+						<div class="question">
+							
+							<a href="<?php the_permalink(); ?>"><?php echo $date->format('M j'); if($enddate) {echo ' - '.$enddate->format('j');}?> - <?php the_title(); ?> <i class="fas fa-chevron-right"></i></a>
+						</div>
+						
+					</div><!-- faqrow -->
+
+				
+			<?php //wp_reset_postdata();
+		endwhile;endif;?>
+	</div>
 	</section><!--.block-3-->
 	<section class="block-4 js-blocks block">
 		<?php $title = get_field("block_4_title");

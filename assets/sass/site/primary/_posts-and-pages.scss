@@ -147,6 +147,7 @@
 		@media screen and (min-width: $tabwidth) {
 			padding-left: 4%;
 		}
+
 		.event {
 			img {
 				width: 100%;
@@ -651,7 +652,7 @@
 					.post {
 						background-color: white;
 						padding: 20px;
-						box-shadow: 0 0 5px black;
+						box-shadow: 0 1px 2px rgba(0,0,0,0.07);
 						text-align: center;
 						margin: 20px 0 0 0;
 						@media screen and (min-width: $midwidth) {
@@ -751,4 +752,103 @@
 			}
 		}
 	}
+}
+.frontevent {
+	width: 100%;
+	h2 {
+		font-weight: 500;
+    line-height: 1.2;
+    font-size: 40px;
+	}
+}
+.faqrow {
+	width: 100%;
+	// overflow: hidden;
+	margin: 0 0 30px 0;	
+	background-color: rgba(255,255,255,.05);
+	border-radius: 10px;
+}
+.question {
+	width: 100%;
+	float:left;
+	margin: 0 0 10px 0;
+	font-weight: bold;
+	font-size: 20px;
+	cursor:pointer;	
+	line-height: 1.3;
+	position: relative;
+	padding: 0 0 0 20px;
+	text-align: left;
+	a {
+		text-decoration: none;
+		color: $color__cs-blue;
+		i, svg {
+			padding: 0 0 0 5px;
+		}
+		&:hover {
+			i, svg {
+				padding: 0 0 0 10px;
+			}
+			
+		}
+	}
+
+}
+.question-image {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: 0px;
+	top: 3px;
+	background-image: url(images/faq.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;	
+}
+.question-image.close {
+	background-position: -15px 0;	
+}
+.answer {
+	width: 100%;
+	float:left;
+	margin: 10px;
+	font-size: 14px;
+	line-height: 1.3;
+	padding: 0 0 0 0px;
+	display:none;
+}
+.plus-minus-toggle {
+    cursor: pointer;
+    height: 21px;
+    position: absolute;
+    width: 21px;
+    left:-10px;
+    top:40%;
+    z-index:2;
+
+    &:before,
+    &:after {
+      background: $color__cs-blue;
+      content: '';
+      height: 5px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 21px;
+      transition: transform 500ms ease;
+    }
+
+    &:after {
+      transform-origin: center;
+    }
+
+    &.collapsed {
+      &:after {
+        transform: rotate(90deg);
+
+      }
+
+      &:before {
+        transform: rotate(180deg);
+      }
+    }
 }
