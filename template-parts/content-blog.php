@@ -24,9 +24,9 @@
 			<section class="col-1">
 				<?php $args = array(
 					'post_type'=>'post',
-					'posts_per_page'=>2,
+					'posts_per_page'=>10,
 					'orderby'=>'date',
-					'order'=>'ASC',
+					'order'=>'DESC',
 					'paged'=>$paged
 				);
 				$query = new WP_Query($args);

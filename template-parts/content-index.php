@@ -99,7 +99,7 @@
 			$enddate = get_field("end_date", false, false);
 			// make date object
 			$date = new DateTime($date);
-			$enddate = new DateTime($enddate);
+			$nenddate = new DateTime($enddate);
 			$read_more_text = get_field("read_more_text","option");
 			$speaking_text = get_field("speaking_text","option");?>
 				
@@ -108,13 +108,13 @@
 					<div class="faqrows">
 						<div class="question">
 							
-							<a href="<?php the_permalink(); ?>"><?php echo $date->format('M j'); if($enddate) {echo ' - '.$enddate->format('j');}?> - <?php the_title(); ?> <i class="fas fa-chevron-right"></i></a>
+							<a href="<?php the_permalink(); ?>"><span class="date"><?php echo $date->format('M j'); if($enddate) {echo ' - '.$nenddate->format('j');}?></span>  <?php the_title(); ?> <i class="fas fa-chevron-right"></i></a>
 						</div>
 						
 					</div><!-- faqrow -->
 
 				
-			<?php //wp_reset_postdata();
+			<?php wp_reset_postdata();
 		endwhile;endif;?>
 	</div>
 	</section><!--.block-3-->
